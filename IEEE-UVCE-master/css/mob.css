@@ -1,0 +1,114 @@
+@media (max-width: 495px) {
+  body {
+    /*new added*/
+    overflow-x: hidden;
+  }
+  .upper-section {
+    /*changed here*/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(30px, auto);
+    grid-gap: 0.4em;
+  }
+  .align-1, .align-2 {
+    line-height: 1.5em;
+    font-size: 11px;
+    margin-top: -10px;
+  }
+  .sig {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 20%;
+    grid-gap: 0.5em;
+  }
+  
+  .descrip {
+    font-size: 0.5em;
+    text-align: center;
+    text-align: justify;
+    padding: 5px;
+  }
+  .title {
+    /*changed here*/
+    font-size: 0.7rem;
+    position: relative;
+    margin-top: 4rem;
+
+  }
+
+  .title-color {
+    background-color: #1c4469;
+    color: #fff;
+    padding: 0.3em;
+    text-align: center;
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 18px;
+  }
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  /* Targetting/overiding specific values   Note: Even and odd won't work*/
+  tr:nth-child(odd) {
+    background-color: rgba(217, 241, 245, 0.8);
+  }
+  tr:nth-child(even) {
+    background-color: rgba(217, 241, 245, 0.3);
+  }
+  /*Hover Effect*/
+  tr:nth-child(n):hover {
+    transition: 250ms;
+    background-color: #92d9db;
+  }
+  td {
+    /*changed here*/
+    padding: 0.5rem !important;
+  }
+  td:nth-child(even) {
+    float: right;
+  }
+  /* Kagada */
+  .k1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .kag-imp {
+    max-width: 99vw;
+    /* max-height: 300px; */
+  }
+  .kag-imp-items, .awards {
+    /*changed here*/
+    font-family: helvetica, sans-serif;
+    list-style-type: square;
+    text-align: justify;
+    font-size: 11px;
+    line-height: 1rem;
+    padding-top: 7px;
+  }
+  /*Awards*/
+  .awards {
+    /*changed here*/
+    line-height: 1.2rem;
+    margin-left: 4px;
+  }
+  /* Footer jumbotron  */
+  .icon {
+    /*changed here*/
+    font-size: 13px !important;
+  }
+  #foot {
+    background-color: #1d1d1d !important;
+    padding: 15px;
+
+  }
+  .alignEnd {
+    display: flex;
+    justify-content: stretch;
+  }
+  #foot p{
+    font-size: 0.5rem;
+  }
+}
